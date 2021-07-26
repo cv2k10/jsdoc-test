@@ -1,8 +1,8 @@
-- react code installed from npx create-react-app cra
-- removed extra sample files and logo.
+
+- this project is for testing jsdoc with better-docs and jsdoc-mermaid 
 
 
-Scheduler
+* Testing
 
 ```mermaid
  sequenceDiagram
