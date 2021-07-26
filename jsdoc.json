@@ -1,0 +1,29 @@
+{
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".js$|.doc$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "tags": {
+    "allowUnknownTags": ["component","category","mermaid"]
+  },
+  "plugins": [
+    "plugins/markdown", 
+    "jsdoc-mermaid", 
+    "node_modules/better-docs/component",
+    "node_modules/better-docs/category"
+  ],
+  "templates": {
+    "better-docs": {
+      "name": "Cv React components"
+    }
+  },
+  "opts": {
+    "encoding": "utf8",
+    "readme": "./README.md",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true,
+    "template": "node_modules/better-docs/"
+  }
+}
