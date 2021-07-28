@@ -24,3 +24,6 @@
 
   import Component0 from '../src/User.js';
 reactComponents['User'] = Component0;
+
+import Component1 from '../src/User.js';
+reactComponents['User'] = Component1;

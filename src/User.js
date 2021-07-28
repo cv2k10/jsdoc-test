@@ -1,10 +1,12 @@
 import React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 
 /**
  * Component for showing details of the user.
  *
  * @component
+ * @prop {string} name - user name, this is required.
+ * @prop {number} age - user age, you can ignore this.
  * @example
  * const age = 21
  * const name = 'John Dao'
@@ -18,8 +20,7 @@ import PropTypes from "prop-types"
  * 
  * @category User Management
  */
-const User = props => {
-  const { name, age } = props
+const User = ({ name, age }) => {
 
   /**
    * Return fullname
@@ -38,20 +39,42 @@ const User = props => {
   )
 }
 
-User.propTypes = {
-  /**
-   * User's name
-   */
-  name: PropTypes.string.isRequired,
-  /**
-   * User's age
-   */
-  age: PropTypes.number,
+
+/**
+ * Component for another user.
+ *
+ * @component
+ * @example
+ * return (
+ *   <UserAnother />
+ * )
+ * 
+ * @category User Management
+ */
+ const UserAnother = () => {
+
+  return (
+    <p>
+      Another component
+    </p>
+  )
 }
 
-User.defaultProps = {
-  name: "David Koo",
-  age: 21,
-}
+
+// User.propTypes = {
+//   /**
+//    * User's name
+//    */
+//   name: PropTypes.string.isRequired,
+//   /**
+//    * User's age
+//    */
+//   age: PropTypes.number,
+// }
+
+// User.defaultProps = {
+//   name: "David Koo",
+//   age: 21,
+// }
 
 export default User;
